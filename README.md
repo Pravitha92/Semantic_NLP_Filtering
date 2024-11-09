@@ -18,3 +18,4 @@ Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from
 to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
 
 ## Semantic NLP Filtering of Papers
+Since the Abstract field provides the most detailed insight into each paper's content, it is used as the primary source for filtering. This method prioritizes contextual understanding to accurately capture papers that apply deep learning techniques to virology/epidemiology.
