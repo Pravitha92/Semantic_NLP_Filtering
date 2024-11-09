@@ -5,16 +5,16 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 
 ## Table of Contents
 * [Preprocess the data](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#preprocess-the-data)
-* [Semantic NLP Filtering of Papers]
+* [Semantic NLP Filtering of Papers]()
     * [NLP technique for filtering the papers]
     * [Why this approach is more effective than keyword-based filtering?]
-* [Classification of Papers]
-* [Extract the name of the method]
-* [Dataset Statistics]
+* [Classification of Papers]()
+* [Extract the name of the method]()
+* [Dataset Statistics]()
 
-  ## Preprocess the data
-   Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
-   `Title`  and `Journal/Book`, ensuring data completeness for further analysis. Following this, data cleaning was applied to standardize the text by converting it 
-   to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
+## Preprocess the data
+Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
+`Title`  and `Journal/Book`, ensuring data completeness for further analysis. Following this, data cleaning was applied to standardize the text by converting it 
+to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
 
 ## Semantic NLP Filtering of Papers
