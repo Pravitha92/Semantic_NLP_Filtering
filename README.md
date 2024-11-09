@@ -18,9 +18,9 @@ Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from
 to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
 
 ## Semantic NLP Filtering of Papers
-Since the `Abstract` field provides the most detailed insight into each paper's content, it is used as the primary source for filtering. This method prioritizes contextual understanding to accurately capture papers that apply deep learning techniques to virology/epidemiology.
+Since the `Abstract` field provides the most detailed insight into each paper's content, it is used as the primary source for filtering. 
 #### NLP technique for filtering the papers
-SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate identification of relevant papers based on meaning rather than simple keyword matching, allowing precise identification of deep learning applications in virology and epidemiology.
+SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate identification of relevant papers based on meaning rather than simple keyword matching. This approach prioritizes contextual understanding to accurately capture deep learning papers to virology/epidemiology.
 ##### Model Selection: 
 A pretrained SBERT model, `all-MiniLM-L6-v2`, chose due to its efficiency and accurate embeddings, making it well-suited for filtering relevant papers. Also this provides 5 times faster and still offers good quality comparing other models.
 ##### Defining Target Terms: 
