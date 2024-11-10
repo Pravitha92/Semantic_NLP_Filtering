@@ -40,8 +40,7 @@ SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate
 By focusing on the overall meaning of each paper’s abstract, this approach enables more precise filtering and captures a broader set of relevant papers.
 
 ## Classification of Papers 
-Classified papers based on the presence of specific keywords related to **text mining**, **computer vision**, **both** or **other**. It checks if any of the keywords from each category appear in the combined text fields (`Abstract`, `Title`, and `Journal`), and assigns the appropriate classification.
-Classified papers using [classification_papers1.py]() by checking for specific keywords related to **text mining**, **computer vision**, **both** or **other**. The script examines combined text fields (`Abstract`, `Title`, and `Journal`) to assign the appropriate classification and extract relevant methods.
+Classified papers using [classification_papers1.py](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/notebooks/classification_papers1.py) by checking for specific keywords related to **text mining**, **computer vision**, **both** or **other**. The script examines combined text fields (`Abstract`, `Title`, and `Journal`) to assign the appropriate classification and extract relevant methods.
 
 ```python
     def classify_paper(self, row):
