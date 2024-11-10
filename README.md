@@ -41,6 +41,7 @@ By focusing on the overall meaning of each paper’s abstract, this approach ena
 
 ## Classification of Papers 
 Classified papers based on the presence of specific keywords related to **text mining**, **computer vision**, **both** or **other**. It checks if any of the keywords from each category appear in the combined text fields (`Abstract`, `Title`, and `Journal`), and assigns the appropriate classification.
+Classified papers using [classification_papers1.py]() by checking for specific keywords related to **text mining**, **computer vision**, **both** or **other**. The script examines combined text fields (`Abstract`, `Title`, and `Journal`) to assign the appropriate classification and extract relevant methods.
 
 ```python
     def classify_paper(self, row):
