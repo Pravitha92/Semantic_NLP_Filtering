@@ -11,7 +11,8 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 * [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#classification-of-papers)
 * [Extract the name of the method]()
 * [Resulting Dataset Statistics]()
-* [Tools and Libraries]() 
+* [Tools and Libraries]()
+* [Conclusion]()
 
 ## Preprocess the data
 Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
@@ -75,11 +76,24 @@ To provide deeper insights, extracts specific terms related to deep learning met
 * **Filtered Out Percentage:** Approximately **6.38%  of the papers are relevant** for further analysis, 93.62% of the papers were filtered out as irrelevant.
 
 * **Classification Results:**
-  The papers were classified into the following categories based on the techniques they apply:
-  **Both (Text Mining & Computer Vision):** 316 papers
-  **Text Mining:** 165 papers
-  **Computer Vision:** 35 papers
-  **Other (Not directly related to primary focus):** 214 papers
+The papers were classified into the following categories based on the techniques they apply:
+   - **Both (Text Mining & Computer Vision)**: 316 papers
+   - **Text Mining**: 165 papers
+   - **Computer Vision**: 35 papers
+   - **Other (Not directly related to primary focus)**: 214 papers
 
 * The pie chart below visualizes the distribution of relevant methods across the dataset:
-     ![image]()
+    <img src="https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/trends_in_methoods_types.png" width="700" alt="Trends in Methods Types">
+
+## Tools and Libraries
+This project relies on the following tools and libraries:
+- Pandas 
+- nltk
+- Matplotlib
+- SBERT
+- Google collab
+- Pycharm
+
+## Conclusion
+This project provides an efficient solution for filtering and classifying academic papers that apply deep learning techniques in virology and epidemiology. By using semantic NLP methods, it enables researchers to quickly identify and analyze relevant studies, categorized by specific techniques like text mining and computer vision. This approach accelerates literature review processes, helping researchers focus on impactful work in their fields.
+
