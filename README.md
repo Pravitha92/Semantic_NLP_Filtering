@@ -10,7 +10,8 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
     * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#why-this-approach-is-more-effective-than-keyword-based-filtering)
 * [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#classification-of-papers)
 * [Extract the name of the method]()
-* [Dataset Statistics]()
+* [Resulting Dataset Statistics]()
+* [Tools and Libraries]() 
 
 ## Preprocess the data
 Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
@@ -38,7 +39,7 @@ SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate
 By focusing on the overall meaning of each paper’s abstract, this approach enables more precise filtering and captures a broader set of relevant papers.
 
 ## Classification of Papers 
-The following code snippet classifies papers based on the presence of specific keywords related to **text mining**, **computer vision**, **both** or **other**. It checks if any of the keywords from each category appear in the combined text fields (`Abstract`, `Title`, and `Journal`), and assigns the appropriate classification.
+Classified papers based on the presence of specific keywords related to **text mining**, **computer vision**, **both** or **other**. It checks if any of the keywords from each category appear in the combined text fields (`Abstract`, `Title`, and `Journal`), and assigns the appropriate classification.
 
 ```python
     def classify_paper(self, row):
@@ -55,8 +56,25 @@ The following code snippet classifies papers based on the presence of specific k
             return "computer vision"
         return "other"
 
+```
 
+## Extract the Name of the Method
+To provide deeper insights, extracts specific terms related to deep learning methods from each paper’s content. This step identifies and lists methods by matching each `Abstract`, `Title`, and `Journal` with keywords across four categories. The extracted methods are saved in a `methods_used` column for further analysis.
 
+```python
+    def extract_method_name(self, row):
+        content = f"{row['Abstract']} {row['Journal']} {row['Title']}".lower()
+        methods = [kw for kw in self.text_mining_keywords + self.computer_vision_keywords + self.both_keywords + self.other_keywords if re.search(rf'\b{kw}\b', content)]
+        return ', '.join(set(methods)) if methods else "None"
 
+```
 
+## Resulting Dataset Statistics
+* **Total Records:** 11,450 papers (original count before filtering)
+* **Filtered Dataset:** After applying semantic filtering to the `Abstract` field, only papers relevant to deep learning in virology/epidemiology were kept.
+* **Filtered Out Percentage:** 
+  ```python
+  Approximately 93.62% of the papers were filtered out as irrelevant, leaving 6.38% as relevant for further analysis.
+ 
+ ```
 
