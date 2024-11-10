@@ -8,7 +8,7 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 * [Semantic NLP Filtering of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#semantic-nlp-filtering-of-papers)
     * [NLP technique for filtering the papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#nlp-technique-for-filtering-the-papers)
     * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#why-this-approach-is-more-effective-than-keyword-based-filtering)
-* [Classification of Papers]()
+* [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#classification-of-papers)
 * [Extract the name of the method]()
 * [Dataset Statistics]()
 
@@ -36,4 +36,8 @@ SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate
 - Reduces irrelevant results by minimizing false positives from mere keyword mentions.
 - Scales easily, allowing flexible updates to target terms for ongoing research.
 By focusing on the overall meaning of each paper’s abstract, this approach enables more precise filtering and captures a broader set of relevant papers.
+
+## Classification of Papers
+Papers are classified as text mining, computer vision, both, or other based on keywords in abstracts, titles, and journals, enabling effective filtering of deep learning applications relevant to virology and epidemiology.
+
 
