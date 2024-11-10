@@ -72,9 +72,14 @@ To provide deeper insights, extracts specific terms related to deep learning met
 ## Resulting Dataset Statistics
 * **Total Records:** 11,450 papers (original count before filtering)
 * **Filtered Dataset:** After applying semantic filtering to the `Abstract` field, only papers relevant to deep learning in virology/epidemiology were kept.
-* **Filtered Out Percentage:** 
-  ```python
-  Approximately 93.62% of the papers were filtered out as irrelevant, leaving 6.38% as relevant for further analysis.
- 
- ```
+* **Filtered Out Percentage:** Approximately **6.38%  of the papers are relevant** for further analysis, 93.62% of the papers were filtered out as irrelevant.
 
+* **Classification Results:**
+  The papers were classified into the following categories based on the techniques they apply:
+  **Both (Text Mining & Computer Vision):** 316 papers
+  **Text Mining:** 165 papers
+  **Computer Vision:** 35 papers
+  **Other (Not directly related to primary focus):** 214 papers
+
+* The pie chart below visualizes the distribution of relevant methods across the dataset:
+     ![image]()
