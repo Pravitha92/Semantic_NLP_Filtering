@@ -8,7 +8,7 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 * [Semantic NLP Filtering of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#semantic-nlp-filtering-of-papers)
     * [NLP technique for filtering the papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#nlp-technique-for-filtering-the-papers)
     * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#why-this-approach-is-more-effective-than-keyword-based-filtering)
-* [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/edit/main/README.md#classification-of-papers)
+* [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#classification-of-papers)
 * [Extract the name of the method]()
 * [Dataset Statistics]()
 
