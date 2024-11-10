@@ -40,4 +40,26 @@ By focusing on the overall meaning of each paper’s abstract, this approach ena
 ## Classification of Papers
 Papers are classified as text mining, computer vision, both, or other based on keywords in abstracts, titles, and journals, enabling effective filtering of deep learning applications relevant to virology and epidemiology.
 
+### Classification of Papers Based on Keywords
+
+The following code snippet classifies papers based on the presence of specific keywords related to **text mining**, **computer vision**, or **both**. It checks if any of the keywords from each category appear in the combined text fields (`Abstract`, `Title`, and `Journal`), and assigns the appropriate classification.
+
+```python
+    def classify_paper(self, row):
+        text = f"{row['Abstract']} {row['Title']} {row['Journal']}".lower()
+        contains_text_mining = any(keyword in text for keyword in self.text_mining_keywords)
+        contains_computer_vision = any(keyword in text for keyword in self.computer_vision_keywords)
+        contains_both = any(keyword in text for keyword in self.both_keywords)
+
+        if contains_both:
+            return "both"
+        elif contains_text_mining:
+            return "text mining"
+        elif contains_computer_vision:
+            return "computer vision"
+        return "other"
+
+
+
+
 
