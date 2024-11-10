@@ -9,10 +9,10 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
     * [NLP technique for filtering the papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#nlp-technique-for-filtering-the-papers)
     * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#why-this-approach-is-more-effective-than-keyword-based-filtering)
 * [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#classification-of-papers)
-* [Extract the name of the method]()
-* [Resulting Dataset Statistics]()
-* [Tools and Libraries]()
-* [Conclusion]()
+* [Extract the name of the method](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#extract-the-name-of-the-method)
+* [Resulting Dataset Statistics](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#resulting-dataset-statistics)
+* [Tools and Libraries](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#tools-and-libraries)
+* [Conclusion](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#conclusion)
 
 ## Preprocess the data
 Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
