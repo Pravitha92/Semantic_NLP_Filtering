@@ -20,7 +20,7 @@ Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from
 to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
 
 ## Semantic NLP Filtering of Papers
-The `Abstract` field, which provides the most detailed insight into each paper's content, is used as the primary source for filtering.
+The `Abstract` field, which provides the most detailed insight into each paper's content, is used as the primary source for filtering. Semantic NLP filtering is done in [filtering_DL_papers_virology_epidemiology.ipynb]() to identify papers applying deep learning in virology/epidemiology.
 ### NLP technique for filtering the papers
 SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate identification of relevant papers based on meaning rather than simple keyword matching. This approach prioritizes contextual understanding to accurately capture deep learning papers to virology/epidemiology.
 - **Model Selection:**
