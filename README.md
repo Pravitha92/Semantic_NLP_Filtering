@@ -6,13 +6,13 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 ## 📚 Table of Contents
 * [Preprocess the data](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main?tab=readme-ov-file#%EF%B8%8F-preprocess-the-data)
 * [Semantic NLP Filtering of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-semantic-nlp-filtering-of-papers)
-    * [NLP technique for filtering the papers]()
-    * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#why-this-approach-is-more-effective-than-keyword-based-filtering)
-* [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#classification-of-papers)
-* [Extract the name of the method](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#extract-the-name-of-the-method)
-* [Resulting Dataset Statistics](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#resulting-dataset-statistics)
-* [Tools and Libraries](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#tools-and-libraries)
-* [Conclusion](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/README.md#conclusion)
+    * [NLP technique for filtering the papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-nlp-technique-for-filtering-the-papers)
+    * [Why this approach is more effective than keyword-based filtering?](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-why-this-approach-is-more-effective-than-keyword-based-filtering)
+* [Classification of Papers](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-classification-of-papers)
+* [Extract the name of the method](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#--extract-the-name-of-the-method)
+* [Resulting Dataset Statistics](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-resulting-dataset-statistics)
+* [Tools and Libraries](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#%EF%B8%8F-tools-and-libraries)
+* [Conclusion](https://github.com/Pravitha92/Semantic_NLP_Filtering/tree/main#-conclusion)
 
 ## ⚙️ Preprocess the data
 Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
