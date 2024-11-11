@@ -16,7 +16,7 @@ This project uses semantic NLP techniques to filter, classify, and extract relev
 
 ## ⚙️ Preprocess the data
 Selected relevant columns (`PMID`, `Title`, `Journal/Book`, and `Abstract`) from the dataset. Filled 213 missing values in the `Abstract` column by combining 
-`Title`  and `Journal/Book`, ensuring data completeness for further analysis. Following this, data cleaning was applied to standardize the text by converting it 
+`Title`  and `Journal/Book`, ensured data completeness for further analysis. Following this, data cleaning was applied to standardize the text by converting it 
 to lowercase, removing stopwords, and eliminating punctuation, streamlining the dataset for processing.
 
 ## 🔍 Semantic NLP Filtering of Papers
@@ -24,11 +24,10 @@ The `Abstract` field, which provides the most detailed insight into each paper's
 ### 🧠 NLP technique for filtering the papers
 SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate identification of relevant papers based on meaning rather than simple keyword matching. This approach prioritizes contextual understanding to accurately capture deep learning papers to virology/epidemiology.
 - **Model Selection:**
-    A pretrained SBERT model, `all-MiniLM-L6-v2`, chose due to its efficiency and accurate embeddings, making it well-suited for filtering relevant papers. This 
-   model provides a good balance of speed (5x faster than other models) and accuracy, making it ideal for filtering relevant papers.
+    A pretrained SBERT model, `all-MiniLM-L6-v2`, chose due to its efficiency and accurate embeddings, making it well-suited for filtering relevant papers. This model provides a good balance of speed (5x faster than other models) and accuracy, making it ideal for filtering relevant papers.
   
 - **Defining Target Terms:** 
-    Target terms relevant to deep learning in virology/epidemiology were identified, and SBERT-generated embeddings were created for each term. These serve as          reference embeddings for semantic comparisons.
+    Target terms relevant to deep learning in virology/epidemiology were identified, and SBERT-generated embeddings were created for each term. These serve as reference embeddings for semantic comparisons.
   
 - **Filtering Process:**
  Each paper’s Abstract embedding was generated using the SBERT model. By comparing these embeddings with target term embeddings using cosine similarity, a score was calculated to gauge relevance. Papers meeting or exceeding the similarity threshold were retained.
@@ -72,7 +71,7 @@ To provide deeper insights, extracts specific terms related to deep learning met
 
 ## 🎯 Resulting Dataset Statistics
 * **Total Records:** 11,450 papers (original count before filtering)
-* **Filtered Dataset:** After applying semantic filtering to the `Abstract` field, only papers relevant to deep learning in virology/epidemiology were kept.
+* **Filtered Dataset:** After applying semantic filtering to the `Abstract` field, only **730 relevant papers** to deep learning in virology/epidemiology were kept.
 * **Filtered Out Percentage:** Approximately **6.38%  of the papers are relevant** for further analysis, 93.62% of the papers were filtered out as irrelevant.
 
 * **Classification Results:**
