@@ -87,12 +87,14 @@ The papers were classified into the following categories based on the techniques
 
 ## 🛠️ Tools and Libraries 
 This project relies on the following tools and libraries:
-- Pandas 
-- nltk
-- Matplotlib
-- SBERT
-- Google collab
-- Pycharm
+
+<code><img height="40" src="https://raw.githubusercontent.com/pandas-dev/pandas/761bceb77d44aa63b71dda43ca46e8fd4b9d7422/web/pandas/static/img/pandas.svg"></code>&nbsp;
+<code><img height="60" src="https://github.com/user-attachments/assets/2ff19762-8dbe-4faf-a3f8-7f98b4de597b"></code>&nbsp;
+<code><img height="30" src="https://matplotlib.org/_static/logo2.svg"></code>&nbsp;
+<code><img height="60" src="https://github.com/user-attachments/assets/cbed53ac-c4c1-4dc8-a7d1-0a046718b75e"></code>&nbsp;
+<code><img height="60" src="https://github.com/user-attachments/assets/20557bd4-e149-4774-80fa-b3ff9dd4135b"></code>&nbsp;
+<code><img height="30" src="https://github.com/user-attachments/assets/86f55f3b-f447-42a3-8967-33f90e85320c"></code>
+
 
 ## 📈 Conclusion
 This project provides an efficient solution for filtering and classifying academic papers that apply deep learning techniques in virology and epidemiology. By using semantic NLP methods, it enables researchers to quickly identify and analyze relevant studies, categorized by specific techniques like text mining and computer vision. This approach accelerates literature review processes, helping researchers focus on impactful work in their fields.
