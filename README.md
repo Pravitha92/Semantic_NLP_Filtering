@@ -33,7 +33,7 @@ SBERT (Sentence-BERT) is used for semantic NLP filtering, enabling more accurate
 - **Filtering Process:**
  Each paper’s Abstract embedding was generated using the SBERT model. By comparing these embeddings with target term embeddings using cosine similarity, a score was calculated to gauge relevance. Papers meeting or exceeding the similarity threshold were retained.
 
-### 📊 Why this approach is more effective than keyword-based filtering?
+### 📊 Effectiveness of Semantic NLP Filtering over Keyword-Based Filtering
 - Captures the contextual meaning of abstracts of each paper, recognizing relevant papers even with varied terminology.
 - Reduces irrelevant results by minimizing false positives from mere keyword mentions.
 - Scales easily, allowing flexible updates to target terms for ongoing research.
