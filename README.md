@@ -1,6 +1,6 @@
 # 🧬 Semantic NLP Filtering for Deep Learning Papers in Virology/Epidemiology
 
-## Project Overview
+## 📝 Project Overview
 This project uses semantic NLP techniques to filter, classify, and extract relevant academic papers on virology and epidemiology. Given an initial dataset [collection_with_abstarcts.csv](https://github.com/Pravitha92/Semantic_NLP_Filtering/blob/main/collection_with_abstracts.csv) from [PubMed](https://pubmed.ncbi.nlm.nih.gov/). The goal is to identify papers that implement deep learning neural network-based solutions in the fields of virology and epidemiology.
 
 ## 📚 Table of Contents
@@ -59,7 +59,7 @@ Classified papers using [classification_papers1.py](https://github.com/Pravitha9
 
 ```
 
-## 📑 Extract the Name of the Method
+## 🔓  Extract the Name of the Method
 To provide deeper insights, extracts specific terms related to deep learning methods from each paper’s content. This step identifies and lists methods by matching each `Abstract`, `Title`, and `Journal` with keywords across four categories. The extracted methods are saved in a `methods_used` column for further analysis.
 
 ```python
